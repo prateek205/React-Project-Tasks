@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <>
-      <section className="h-16 p-2">
+      <section className="h-16 p-2 bg-slate-950">
         <nav className="flex items-center justify-between">
           <h1 className="text-4xl uppercase font-light">
             My Port<span className="font-bold text-cyan-400">folio</span>
