@@ -1,10 +1,12 @@
+import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
     <>
-      <div className="w-screen h-screen flex flex-col gap-1 bg-black text-white">
+      <div className="flex flex-col bg-black text-white">
         <Navbar />
+        <HeroSection />
       </div>
     </>
   );
