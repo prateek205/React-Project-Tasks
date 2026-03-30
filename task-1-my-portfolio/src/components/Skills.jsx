@@ -7,7 +7,7 @@ const Skills = () => {
     "Node.js",
     "Express.js",
     "MongoDB",
-    "Tailwind-css",
+    "Tailwind",
     "Postman",
     "Vercel",
     "GitHub",
@@ -19,11 +19,11 @@ const Skills = () => {
       <h2 className="text-4xl font-light underline underline-offset-8 decoration-cyan-500">
         My <span className="font-bold text-cyan-500">Skills</span>
       </h2>
-      <div className="flex gap-5">
+      <div className="flex gap-2 p-10">
         {Skill.map((item, index) => (
           <span
             key={index}
-            className="text-black text-lg px-5 py-2 rounded-md cursor-pointer hover:bg-cyan-300 hover:text-black hover:-translate-y-1 bg-gray-300 transition-all"
+            className="text-white text-sl px-7 py-2 rounded-md cursor-pointer hover:bg-cyan-300 hover:text-black hover:-translate-y-1 bg-gray-500 transition-all"
           >
             {item}
           </span>
