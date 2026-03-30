@@ -6,7 +6,7 @@ const Navbar = () => {
           <h1 className="text-4xl uppercase font-light">
             My Port<span className="font-bold text-cyan-400">folio</span>
           </h1>
-          <ul className="flex gap-9 text-lg font-light">
+          <ul className="flex items-center gap-9 text-lg font-light">
             <li className="hover:text-cyan-500 hover:underline hover:transition-all cursor-pointer">
               Home
             </li>
@@ -22,6 +22,9 @@ const Navbar = () => {
             <li className="hover:text-cyan-500 hover:underline hover:transition-all cursor-pointer">
               Contact
             </li>
+            <button className="px-5 py-1 text-lg rounded-md bg-cyan-600 font-bold cursor-pointer ">
+              Resume
+            </button>
           </ul>
         </nav>
       </section>

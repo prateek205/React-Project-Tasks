@@ -4,7 +4,7 @@ const About = () => {
       <section className="flex items-start p-5 gap-5">
         <div className="flex items-center justify-center">
           <img
-            src="/public/profileImage.png"
+            src="/profileImage.png"
             alt=""
             className="w-45 h-45 object-cover basis-1/2"
           />
