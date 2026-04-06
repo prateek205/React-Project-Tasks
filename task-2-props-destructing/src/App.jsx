@@ -5,10 +5,17 @@ import UserGreet from "./components/UserGreeting";
 import Status from "./components/Status";
 import TechStack from "./components/TechStack";
 import Product from "./components/ProductItem";
+import Button from "./components/Button";
+import Image from "./components/ImageCard";
+import Users from "./components/User";
 
 export default function App() {
+  const user = {
+    name: "prateek",
+    age: 33,
+  };
   return (
-    <h1 className="text-2xl flex flex-col gap-4">
+    <h1 className="py-10 px-5 text-2xl flex flex-col gap-4 items-start justify-evenly">
       <Header />
       <UserGreet name="Prateek Bahad" />
       <ProfileCard
@@ -18,8 +25,16 @@ export default function App() {
       />
       <Calculator num1={5} num2={10} />
       <Status isOnline={true} />
-      <TechStack/>
-      <Product price={500}/>
+      <TechStack />
+      <Product price={500} />
+      <Button text="Login" color="Blue" />
+      <Image
+        url={
+          "https://i0.wp.com/picjumbo.com/wp-content/uploads/detailed-shot-of-ripples-at-sunset-free-image.jpeg?w=600&quality=80"
+        }
+        caption="Sample Image"
+      />
+      <Users user={user}/>
     </h1>
   );
 }
