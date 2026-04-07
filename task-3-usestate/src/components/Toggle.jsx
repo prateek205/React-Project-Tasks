@@ -15,7 +15,7 @@ export default function Toggle() {
           {!isVisible ? "Hide" : "Show"}
         </button>
 
-        {!isVisible && <p className="font-bold text-lg">React is Awesome!</p>}
+        {!isVisible && <p className="font-slim text-lg">React is Awesome!</p>}
       </div>
     </div>
   );
