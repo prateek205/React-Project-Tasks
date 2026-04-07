@@ -20,7 +20,12 @@ export default function Counter() {
             Steps Walk
           </button>
 
-          <button className="border-2 border-black py-1 px-2 rounded-md hover:bg-red-500 hover:text-white hover:border-white" onClick={() => setCountStep(0)}>Reset</button>
+          <button
+            className="border-2 border-black py-1 px-2 rounded-md hover:bg-red-500 hover:text-white hover:border-white"
+            onClick={() => setCountStep(0)}
+          >
+            Reset
+          </button>
         </div>
       </div>
     </div>
