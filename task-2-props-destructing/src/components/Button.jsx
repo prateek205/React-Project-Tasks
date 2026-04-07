@@ -5,12 +5,15 @@ export default function Button({ text, color }) {
     <div>
       <h1 className="font-bold">Task - 8 Custom Button</h1>
       <button
-        style={{ backgroundColor: color, color: "white", padding: "10px 20px" }}
+        style={{
+          backgroundColor: color,
+          color: "white",
+          padding: "3px 10px",
+          borderRadius: "5px",
+        }}
       >
         {text}
       </button>
     </div>
   );
 }
-
-
