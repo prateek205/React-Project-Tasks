@@ -8,6 +8,7 @@ import Product from "./components/ProductItem";
 import Button from "./components/Button";
 import Image from "./components/ImageCard";
 import Users from "./components/User";
+import ProjectCard from "./components/ProjectCard";
 
 export default function App() {
   const user = {
@@ -34,7 +35,12 @@ export default function App() {
         }
         caption="Sample Image"
       />
-      <Users user={user}/>
+      <Users user={user} />
+      <ProjectCard
+        title="E-commerce App"
+        description="A responsive static eCommerce website built using HTML, CSS, and JavaScript featuring product listings, modern UI design, and a clean shopping layout."
+        link="https://ecommercestaticwebsiteprateek.netlify.app/"
+      />
     </h1>
   );
 }
