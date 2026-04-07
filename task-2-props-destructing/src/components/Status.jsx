@@ -4,7 +4,7 @@ export default function Status(props) {
   return (
     <div>
       <h1 className="font-bold">Task - 5 Status</h1>
-      <p>Status Show: {props.isOnline ? "🟢Green Dot" : "🔴Red Dot"}</p>
+      <p>Status Show: {props.isOnline ? "🟢" : "🔴"}</p>
     </div>
   );
 }
