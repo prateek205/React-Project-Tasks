@@ -8,7 +8,7 @@ export default function App() {
     <div className="flex flex-col gap-3 py-5 px-3">
       <BrowserTitle />
       <LogUser />
-      {/* <Alert /> */}
+      <Alert />
       <Cleanup />
     </div>
   );
