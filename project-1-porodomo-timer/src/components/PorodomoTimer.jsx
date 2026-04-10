@@ -27,7 +27,7 @@ const PorodomoTimer = () => {
         }
         return t - 1;
       });
-    }, 1000);
+    }, 300);
     return () => clearInterval(timer);
   }, [isActive]);
 
@@ -45,16 +45,13 @@ const PorodomoTimer = () => {
           >
             {m} :{" "}
             <span
-              className={`
-            transition-colors duration-500 ease-in-out
-              ${
+              className={
                 time <= 5
                   ? "text-red-600"
                   : time <= 10
                     ? "text-orange-400"
                     : "text-green-500"
               }
-            `}
             >
               {s}
             </span>
