@@ -18,7 +18,10 @@ const PorodomoTimer = () => {
   };
 
   const formatted = formatTime(time);
+
   const [m, s] = formatted.split(" : ");
+
+  console.log("time:", formatTime(time));
 
   const handleStartPause = () => {
     if (isActive) {
@@ -62,14 +65,14 @@ const PorodomoTimer = () => {
   //   setMode(newMode);
   // };
 
-  // useEffect(() => {
+  // useEffect((modeTime) => {
   //   const modeTime = {
   //     WorkMode: 1500,
   //     LongBreak: 900,
   //     ShortBreak: 300,
   //   };
 
-  //   setTime(modeTime[mode]);
+  //   setTime(modeTime);
   // }, [mode]);
 
   return (
@@ -84,7 +87,7 @@ const PorodomoTimer = () => {
           <h2
             className={`text-6xl font-bold ${time <= 300 ? "text-red-600" : time <= 900 ? " text-orange-400" : time <= 1500 ? "text-green-500" : "text-white"}`}
           >
-            {m} :{" "}
+            {m} :
             <span
               className={
                 time <= 5
@@ -124,6 +127,7 @@ const PorodomoTimer = () => {
             Short Break
           </button>
         </div>
+
         {/* <div className="flex gap-5">
           <button
             onClick={() => setMode("work")}
