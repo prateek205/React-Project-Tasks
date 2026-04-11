@@ -76,8 +76,8 @@ const PorodomoTimer = () => {
     <div className="h-1/2 w-1/2 bg-gray-800 rounded-md flex flex-col items-center justify-start py-2 px-1">
       <div className="flex flex-col items-center justify-center gap-16">
         <h1 className="uppercase text-white text-6xl font-light">
-          po<span className="text-cyan-500 font-bold">ro</span>do
-          <span className="text-cyan-500 font-bold">mo</span>{" "}
+          po<span className="text-cyan-500 font-bold">mo</span>do
+          <span className="text-cyan-500 font-bold">ro</span>{" "}
           <span className="text-green-500 font-bold">timer</span>
         </h1>
         <div className="flex flex-col gap-8 items-center justify-center">
